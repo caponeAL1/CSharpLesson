@@ -1,0 +1,11 @@
+﻿@model MVNwin.Models.OrderIDsViewModel
+
+<div>
+    <h4> OrderIds</h4>
+    <hr/>
+    <form asp-asp-controller="Order" method="post" asp-action="Details">
+        <select asp-for="ID" asp-items="Model.OrderIdSelectedList">
+        </select>
+        <button type="submit">Details</button>
+    </form>
+</div>
